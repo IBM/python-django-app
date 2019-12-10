@@ -11,7 +11,7 @@ name = "pypi"
 [packages]
 livereload ='*'
 ibmcloudenv ='~=0.0'
-Django = "==2.2"
+Django = ">=2.2.8"
 gunicorn = "==19.7.1"
 whitenoise= "==3.3.1"
 

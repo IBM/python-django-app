@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html style="background-color: #f8f6f8;">
+
+<head>
+    <title>IBM Cloud Web Starter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css"></link>
+    {% load static %}
+    <link rel="stylesheet" href="/static/css/default.css"></link>
+    <script src="{% static 'js/bundle.js' %}" charset="utf-8"></script>
+</head>
+
+<body>
+<div id="new-container">
+
+    <div class="ibm-cloud">
+        <img src="{% static 'images/cloud-header.png' %}">
+    </div>
+
+    <h1 class="title">Congratulations!</h1>
+    <h2 class="subtitle">You are currently running a Django server.</h2>
+
+    <div class="link-section">
+        <div class="left-link-items">
+            <ul class="the-links">
+                <li class="link-item"><img class="right-arrow" src="{% static 'images/arrow-right-transparent-smaller.png' %}"><a href="https://console.bluemix.net/developer/appservice/dashboard?env_id=ibm%3Ayp%3Aus-south">Visit IBM Cloud App Service</a></li>
+                <li class="link-item"><img class="right-arrow" src="{% static 'images/arrow-right-transparent-smaller.png' %}"><a href="https://slack-invite-ibm-cloud-tech.mybluemix.net/">Ask questions on Slack</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right-link-items">
+            <ul class="the-links">
+                <!-- Here we could have the language as a variable, and we'd provide the appropriate tag/links -->
+
+                <li class="link-item"><img class="right-arrow" src="{% static 'images/arrow-right-transparent-smaller.png' %}"><a href="https://www.ibm.com/cloud/cli">Install IBM Cloud Developer Tools</a></li>
+                <li class="link-item"><img class="right-arrow" src="{% static 'images/arrow-right-transparent-smaller.png' %}"><a href="https://datascience.ibm.com/">Learn about IBM’s Data Science Experience</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

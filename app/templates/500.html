@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IBM Cloud Web Starter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css"></link>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/default.css' %}"></link>
+    <script src="{% static 'js/bundle.js' %}" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="hero-body">
+
+    <div id="new-container">
+
+        <div class="ibm-404">
+            <img src="{% static 'images/404.svg' %}">
+
+            <h1 class="title-404">Uh oh!</h1>
+            <h2 class="subtitle">Whoops! The server couldn't handle your request.
+                Click to go back to the <a href="/">overview page</a>.</h2>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

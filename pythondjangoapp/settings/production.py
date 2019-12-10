@@ -1,4 +1,4 @@
-from djangowebapp.settings.base import *
+from pythondjangoapp.settings.base import *
 
 DEBUG = False
 

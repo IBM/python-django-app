@@ -12,10 +12,10 @@ RUN pip install --upgrade pip \
   && pip install --upgrade pipenv\
   && pip install --upgrade -r /tmp/requirements.txt
 
-COPY --chown=1001:1001 . /app
-COPY --chown=1001:1001 run-dev /bin
+COPY --chown=1000:1000 . /app
+COPY --chown=1000:1000 run-dev /bin
 RUN chmod 777 /bin/run-dev
-USER 1001
+USER 1000
 
 ARG bx_dev_user=root
 ARG bx_dev_userid=1000

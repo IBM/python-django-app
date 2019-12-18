@@ -6,10 +6,10 @@ COPY requirements.txt /tmp/requirements.txt
 
 ## NOTE - rhel enforces user container permissions stronger ##
 USER root
-RUN yum install python3-pip wget
+RUN yum -y install python3-pip wget
 
 RUN pip install --upgrade pip \
-  && pip install --upgrade pipenv\
+  && pip install --upgrade pipenv \
   && pip install --upgrade -r /tmp/requirements.txt
 
 USER 1001

@@ -16,7 +16,7 @@
 
 # Create and deploy a Python Django web application
 
-> We have similar applications available for [Go](https://github.com/IBM/go-web-app), [Java Spring](https://github.com/IBM/spring-web-app), [Swift](https://github.com/IBM/swift-web-app), [Node](https://github.com/IBM/nodejs-web-app), [Python Flask](https://github.com/IBM/flask-web-app), and [Java Liberty](https://github.com/IBM/java-liberty-web-app).
+> We have similar applications available for [Node.js](https://github.com/IBM/node-express-app), [Go](https://github.com/IBM/go-gin-app), [Java Spring](https://github.com/IBM/java-spring-app), [Python Flask](https://github.com/IBM/python-flask-app), [Swift](https://github.com/IBM/swift-kitura-app), and [Java Liberty](https://github.com/IBM/java-liberty-app).
 
 In this sample application, you will create a web application using Django to serve web pages in Python, complete with standard best practices, including a health check.
 
@@ -33,7 +33,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=f9368df2-3939-35e0-b8f9-01462eed8bc4">
+    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/96500633-878d-393b-bad4-8563e17f6cf1/python-django-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>

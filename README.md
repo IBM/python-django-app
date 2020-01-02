@@ -33,7 +33,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/af722f25-5ab9-3616-9cf8-6fce9e685eee/python-flask-app">
+    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/96500633-878d-393b-bad4-8563e17f6cf1/python-django-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>

@@ -11,6 +11,3 @@ whitenoise = "==5.0"
 ibmcloudenv = "*"
 livereload = "*"
 Django = ">=2.2.8"
-
-[requires]
-python_version = ">=3"

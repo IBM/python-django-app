@@ -1,16 +1,19 @@
 [[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
+
+url = "https://pypi.python.org/simple"
 verify_ssl = true
+name = "pypi"
+
 
 [dev-packages]
 
+
 [packages]
-gunicorn = "==19.7.1"
-whitenoise = "==5.0"
-ibmcloudenv = "*"
-livereload = "*"
+livereload ='*'
+ibmcloudenv ='~=0.0'
 Django = ">=2.2.8"
+gunicorn = "==19.7.1"
+whitenoise= "==5.0"
 
 [requires]
-python_version = ">=3"
+python_version = '3.6.2'

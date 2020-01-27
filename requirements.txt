@@ -1,0 +1,5 @@
+Django>=2.2.8
+gunicorn==19.7.1
+whitenoise==5.0
+ibmcloudenv
+livereload

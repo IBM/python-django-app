@@ -13,7 +13,7 @@ driver.get(os.environ["APP_URL"]); # Open a browser to the app's landing page
 time.sleep(3)
 
 # Verify the expected content is present
-title_texts = driver.driver.find_elements_by_tag_name('h1')
+title_texts = driver.find_elements_by_tag_name('h1')
 if len(title_texts) == 0:
     sys.exit("Experience Test Failed: no title texts found")
 

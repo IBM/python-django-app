@@ -11,6 +11,7 @@ options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome(options=options)
 driver.get(os.environ["APP_URL"]); # Open a browser to the app's landing page
 time.sleep(3)
+
 # Verify the expected content is present
 title_text = driver.find_element_by_css_selector('h1.title').text
 print("The title text is: {}".format(title_text))

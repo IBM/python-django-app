@@ -12,14 +12,14 @@ driver = webdriver.Chrome(options=options)
 driver.get(os.environ["APP_URL"]); # Open a browser to the app's landing page
 time.sleep(3)
 # Verify the expected content is present
-title_text = driver.find_element_by_css_selector('h1.title').text
+title_text = driver.find_element_by_class_name('title')
 print("The title text is: {}".format(title_text))
 if title_text == "Congratulations!":
     print("Experience Test Successful")
 else:
     sys.exit("Experience Test Failed")
 
-subtitle_text = driver.find_element_by_css_selector('h2.subtitle').text
+subtitle_text = driver.find_element_by_class_name('subtitle')
 print("The subtitle text is: {}".format(subtitle_text))
 if subtitle_text == "You are currently running a Django server.":
     print("Experience Test Successful")

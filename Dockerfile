@@ -7,6 +7,8 @@ COPY Pipfile* /app/
 ## NOTE - rhel enforces user container permissions stronger ##
 USER root
 RUN yum -y install python3-pip wget
+# don't need mysql, causes VA issues
+RUN yum remove mysql mysql-server
 
 RUN pip install --upgrade pip \
   && pip install --upgrade pipenv \

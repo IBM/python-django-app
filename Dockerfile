@@ -6,8 +6,8 @@ COPY Pipfile* /app/
 
 ## NOTE - rhel enforces user container permissions stronger ##
 USER root
-RUN yum -y install python3 python3-pip wget
-RUN yum autoremove -y
+RUN yum -y install python3 
+RUN yum -y install python3-pip wget
 
 RUN pip install --upgrade pip \
   && pip install --upgrade pipenv \

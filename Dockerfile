@@ -8,8 +8,8 @@ COPY Pipfile* /app/
 USER root
 RUN yum -y install python3-pip wget
 # don't need mysql and apache2, causes VA issues
-RUN yum remove mysql mysql-server
-RUN yum remove httpd httpd-tools apr apr-util
+RUN yum remove mysql mysql-server -y
+RUN yum remove httpd httpd-tools apr apr-util -y
 RUN yum autoremove -y
 
 RUN pip install --upgrade pip \

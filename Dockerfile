@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/python-36
+FROM registry.access.redhat.com/ubi8-minimal
 
 WORKDIR /app
 
@@ -6,10 +6,7 @@ COPY Pipfile* /app/
 
 ## NOTE - rhel enforces user container permissions stronger ##
 USER root
-RUN yum -y install python3-pip wget
-# don't need mysql and apache2, causes VA issues
-RUN yum remove mysql mysql-server -y
-RUN yum remove httpd httpd-tools apr apr-util -y
+RUN yum -y install python3 python3-pip wget
 RUN yum autoremove -y
 
 RUN pip install --upgrade pip \

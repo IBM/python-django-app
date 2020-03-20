@@ -62,7 +62,7 @@ To run your application locally:
 python manage.py start
 ```
 
-Your application will be running at `http://localhost:3000`.  You can access the `/health` endpoint at the host.
+Your application will be running at `http://localhost:3000`.  You can access the `/health` endpoint at the host. You can also verify the state of your locally running application using the Selenium UI test script included in the `scripts` directory.
 
 ##### Debugging locally
 To debug a `django` project run `python manage.py runserver` with DEBUG set to True in `settings.py` to start a native django development server. This comes with the Django's stack-trace debugger, which will present runtime failure stack-traces. For more information, see [Django's documentation](https://docs.djangoproject.com/en/2.0/ref/settings/).

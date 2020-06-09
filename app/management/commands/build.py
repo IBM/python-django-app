@@ -1,6 +1,7 @@
 import subprocess
 from django.core.management.base import BaseCommand
 
+
 class Command(BaseCommand):
     help = 'compiles python files in project into .pyc binaries'
 

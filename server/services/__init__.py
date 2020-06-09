@@ -2,8 +2,9 @@
 # Do not modify it as it might get overridden
 
 from ibmcloudenv import IBMCloudEnv
+
 IBMCloudEnv.init()
 
 
 def initServices(app):
-  return
+    return

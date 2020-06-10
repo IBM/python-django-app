@@ -6,7 +6,5 @@ from . import service_manager
 IBMCloudEnv.init()
 
 
-
 def initServices(app):
-	
 	return

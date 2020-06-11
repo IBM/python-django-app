@@ -3,6 +3,7 @@ from django.test import SimpleTestCase
 from django.test import Client
 client = Client()
 
+
 class HealthEndpointTests(SimpleTestCase):
     def test_health_status_is_up(self):
         response = self.client.get('/health')

@@ -14,6 +14,6 @@ RUN pip3 install --upgrade pip \
   && pipenv install --system --deploy
 
 USER 1001
-
+ENV PORT=8080
 COPY . /app
-CMD ["gunicorn", "-b", "0.0.0.0:3000", "--env", "DJANGO_SETTINGS_MODULE=pythondjangoapp.settings.production", "pythondjangoapp.wsgi", "--timeout 120"]
+CMD ["gunicorn", "-b", "0.0.0.0:$PORT", "--env", "DJANGO_SETTINGS_MODULE=pythondjangoapp.settings.production", "pythondjangoapp.wsgi", "--timeout 120"]

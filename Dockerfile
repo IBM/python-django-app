@@ -14,7 +14,7 @@ RUN pip3 install --upgrade pip \
   && pipenv install --system --deploy
 
 # Generate SECRET_KEY file
-RUN python3 manage.py generate_secret_key secretkey.txt
+RUN python3 manage.py generate_secret_key --replace
 
 USER 1001
 

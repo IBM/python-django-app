@@ -19,7 +19,7 @@ RUN pipenv install
 RUN alternatives --set python /usr/bin/python3
 
 # Generate SECRET_KEY file
-RUN python3 manage.py generate_secret_key secretkey.txt
+RUN python3 manage.py generate_secret_key --replace
 
 COPY . /app
 COPY run-dev /bin

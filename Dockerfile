@@ -13,6 +13,9 @@ RUN pip3 install --upgrade pip \
   && pip3 install --upgrade pipenv \
   && pipenv install --system --deploy
 
+# Generate SECRET_KEY file
+RUN python3 manage.py generate_secret_key secretkey.txt
+
 USER 1001
 
 COPY . /app

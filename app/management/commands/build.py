@@ -1,4 +1,4 @@
-import subprocess
+import subprocess, shlex
 from django.core.management.base import BaseCommand
 
 
@@ -7,4 +7,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         cmd = 'python -m compileall .'
-        subprocess.call(cmd, shell=True)
+        subprocess.call(shlex.split(cmd), shell=True)

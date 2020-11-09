@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Get SECRET_KEY from secret.txt file
-with open(os.path.join(os.path.abspath(BASE_DIR), 'secretkey.txt')) as f:
+with open(os.path.join(BASE_DIR, 'secretkey.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 ALLOWED_HOSTS = ['*']

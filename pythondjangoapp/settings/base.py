@@ -3,12 +3,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-
-SECRET_KEY = '+)!83krz^m$i%=uo!4b7ps2s7q=2ikcm#sw!c=#6v9er#hx8or'
+# Get SECRET_KEY from secret.txt file
+with open(os.path.join(os.path.abspath(BASE_DIR), 'secretkey.txt')) as f:
+    SECRET_KEY = f.read().strip()
 
 ALLOWED_HOSTS = ['*']
 
@@ -20,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_generate_secret_key',
     'livereload',
     'app'
 ]
@@ -78,7 +76,7 @@ AUTH_PASSWORD_VALIDATORS = [
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "app", "static"),
+    os.path.join(os.path.abspath(BASE_DIR), "app", "static"),
 )
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = os.path.join(os.path.abspath(BASE_DIR), "staticfiles")

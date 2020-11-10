@@ -1,4 +1,4 @@
-import subprocess
+import subprocess, shlex
 from django.core.management.base import BaseCommand
 
 
@@ -10,4 +10,4 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         cmd = 'gunicorn -b {0} pythondjangoapp.wsgi'.format(options['addrport'])
-        subprocess.call(cmd, shell=True)
+        subprocess.call(shlex.split(cmd), shell=True)

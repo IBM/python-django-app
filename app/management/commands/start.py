@@ -1,4 +1,4 @@
-import subprocess, shlex
+import subprocess
 from django.core.management.base import BaseCommand
 
 
@@ -9,5 +9,5 @@ class Command(BaseCommand):
         parser.add_argument('addrport', nargs='?', default='0.0.0.0:3000', help='Optional ipaddr:port')
 
     def handle(self, *args, **options):
-        cmd = 'gunicorn -b {0} pythondjangoapp.wsgi'.format(options['addrport'])
-        subprocess.call(shlex.split(cmd), shell=True)
+        cmd = ['gunicorn', '-b', options['addrport'], 'pythondjangoapp.wsgi']
+        subprocess.call(cmd)

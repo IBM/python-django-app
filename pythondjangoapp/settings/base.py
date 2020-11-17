@@ -4,6 +4,8 @@ from django.core.management.utils import get_random_secret_key
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# NOTE: Set the below value for 'SECRET_KEY' to a unique key for production deploys
+# Reference: https://docs.djangoproject.com/en/3.1/ref/settings/#secret-key
 SECRET_KEY = get_random_secret_key()
 
 ALLOWED_HOSTS = ['*']

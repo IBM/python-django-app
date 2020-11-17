@@ -17,7 +17,4 @@ USER 1001
 
 COPY . /app
 
-# Generate SECRET_KEY file
-RUN python3 manage.py generate_secret_key --replace
-
 CMD ["gunicorn", "-b", "0.0.0.0:3000", "--env", "DJANGO_SETTINGS_MODULE=pythondjangoapp.settings.production", "pythondjangoapp.wsgi", "--timeout 120"]

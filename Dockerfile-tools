@@ -20,9 +20,6 @@ RUN alternatives --set python /usr/bin/python3
 
 COPY . /app
 
-# Generate SECRET_KEY file
-RUN python3 manage.py generate_secret_key --replace
-
 COPY run-dev /bin
 RUN chmod 777 /bin/run-dev
 

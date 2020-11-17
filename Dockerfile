@@ -13,10 +13,8 @@ RUN pip3 install --upgrade pip \
   && pip3 install --upgrade pipenv \
   && pipenv install --system --deploy
 
-# Generate SECRET_KEY file
-RUN python3 manage.py generate_secret_key --replace
-
 USER 1001
 
 COPY . /app
+
 CMD ["gunicorn", "-b", "0.0.0.0:3000", "--env", "DJANGO_SETTINGS_MODULE=pythondjangoapp.settings.production", "pythondjangoapp.wsgi", "--timeout 120"]

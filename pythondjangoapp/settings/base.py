@@ -1,11 +1,12 @@
 import os
+from django.core.management.utils import get_random_secret_key
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Get SECRET_KEY from secret.txt file
-with open(os.path.join(os.path.abspath(BASE_DIR), 'secretkey.txt')) as f:
-    SECRET_KEY = f.read().strip()
+# NOTE: Set the below value for 'SECRET_KEY' to a unique key for production deploys
+# Reference: https://docs.djangoproject.com/en/3.1/ref/settings/#secret-key
+SECRET_KEY = get_random_secret_key()
 
 ALLOWED_HOSTS = ['*']
 
@@ -17,7 +18,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_generate_secret_key',
     'livereload',
     'app'
 ]

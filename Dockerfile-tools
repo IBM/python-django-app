@@ -19,6 +19,7 @@ RUN pipenv install
 RUN alternatives --set python /usr/bin/python3
 
 COPY . /app
+
 COPY run-dev /bin
 RUN chmod 777 /bin/run-dev
 

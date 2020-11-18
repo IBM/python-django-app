@@ -9,5 +9,5 @@ class Command(BaseCommand):
         parser.add_argument('addrport', nargs='?', default='0.0.0.0:3000', help='Optional port number, or ipaddr:port')
 
     def handle(self, *args, **options):
-        cmd = 'python manage.py runserver {0} --noreload'.format(options['addrport'])
-        subprocess.call(cmd, shell=True)
+        cmd = ['python', 'manage.py', 'runserver', options['addrport'], '--noreload']
+        subprocess.call(cmd)

@@ -9,5 +9,5 @@ class Command(BaseCommand):
         parser.add_argument('addrport', nargs='?', default='0.0.0.0:3000', help='Optional ipaddr:port')
 
     def handle(self, *args, **options):
-        cmd = 'gunicorn -b {0} pythondjangoapp.wsgi'.format(options['addrport'])
-        subprocess.call(cmd, shell=True)
+        cmd = ['gunicorn', '-b', options['addrport'], 'pythondjangoapp.wsgi']
+        subprocess.call(cmd)

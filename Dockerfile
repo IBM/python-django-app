@@ -17,6 +17,8 @@ USER 1001
 
 COPY . /app
 
+ENV PORT 3000
+
 EXPOSE 3000
 
-CMD ["gunicorn", "-b", "0.0.0.0:3000", "--env", "DJANGO_SETTINGS_MODULE=pythondjangoapp.settings.production", "pythondjangoapp.wsgi", "--timeout 120"]
+CMD ["python3", "manage.py", "start"]

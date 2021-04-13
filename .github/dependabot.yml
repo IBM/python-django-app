@@ -6,4 +6,4 @@ updates:
       interval: "daily"
     target-branch: "development"
     labels:
-      - "django dependencies"
+      - "pip dependencies"

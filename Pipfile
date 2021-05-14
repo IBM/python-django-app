@@ -7,10 +7,10 @@ verify_ssl = true
 coverage = "*"
 flake8 = "*"
 selenium = "*"
+livereload = "*"
 
 [packages]
 gunicorn = "==20.1.0"
 whitenoise = "==5.2.0"
 ibmcloudenv = "*"
-livereload = "*"
 django = ">=3.1"

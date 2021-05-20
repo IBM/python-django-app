@@ -22,4 +22,4 @@ ENV PORT 3000
 
 EXPOSE 3000
 
-CMD ["python3" "manage.py" "start"]
+CMD ["python3", "manage.py", "start"]

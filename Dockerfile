@@ -12,6 +12,8 @@ RUN pip3 install --upgrade pip==21.0.1 \
   && pip3 install --upgrade pipenv==2020.11.15 \
   && pipenv install --deploy
 
+RUN pipenv lock -r > requirements.txt && pip3 install -r requirements.txt
+
 USER 1001
 
 COPY . /opt/app-root/src
@@ -20,4 +22,4 @@ ENV PORT 3000
 
 EXPOSE 3000
 
-CMD ["python3", "manage.py", "start"]
+CMD exec python3 manage.py start

@@ -1,15 +1,11 @@
 # Use base UBI image
 FROM registry.access.redhat.com/ubi8/ubi
 
-WORKDIR /app
+WORKDIR /opt/app-root/src
 
-COPY Pipfile* /app/
+COPY Pipfile* /opt/app-root/src/
 
-# Install python 3
-RUN yum -y install --disableplugin=subscription-manager python36 \
-  && yum --disableplugin=subscription-manager clean all
-
-RUN yum -y install --disableplugin=subscription-manager python3-pip wget \
+RUN yum -y install --disableplugin=subscription-manager wget \
   && yum --disableplugin=subscription-manager clean all
 
 RUN pip3 install pipenv
@@ -18,7 +14,7 @@ RUN pipenv install
 # Update python command to point to python3 install
 RUN alternatives --set python /usr/bin/python3
 
-COPY . /app
+COPY . /opt/app-root/src
 
 COPY run-dev /bin
 RUN chmod 777 /bin/run-dev

@@ -10,7 +10,7 @@ RUN yum -y install wget
 
 RUN pip3 install --upgrade pip==21.0.1 \
   && pip3 install --upgrade pipenv==2020.11.15 \
-  && pipenv install --system --deploy
+  && pipenv install --deploy
 
 USER 1001
 

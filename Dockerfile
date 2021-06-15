@@ -6,7 +6,6 @@ COPY Pipfile* /opt/app-root/src/
 
 ## NOTE - rhel enforces user container permissions stronger ##
 USER root
-RUN yum -y install wget
 
 RUN pip3 install --upgrade pip==21.0.1 \
   && pip3 install --upgrade pipenv==2020.11.15 \

@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'drf_yasg',
+    'drf_spectacular',
     'app'
 ]
 
@@ -104,7 +104,12 @@ STATIC_ROOT = os.path.join(os.path.abspath(BASE_DIR), "staticfiles")
 
 
 # Rest framework
-
 REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Django REST API',
+    'DESCRIPTION': 'API for Django REST app',
+    'VERSION': '1.0.0',
 }

@@ -13,7 +13,7 @@ from drf_spectacular.types import OpenApiTypes
                         value='{ \"status\": \"UP\" }'
                     ),
                 ],
-        description='Health response',
+        description='Get health of application',
         responses=OpenApiTypes.OBJECT, 
      ) 
 @api_view(['GET'])

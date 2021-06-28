@@ -6,6 +6,6 @@ client = Client()
 
 class HealthEndpointTests(SimpleTestCase):
     def test_health_status_is_up(self):
-        response = self.client.get('/health')
+        response = self.client.get('/health/')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, '{"status": "UP"}')

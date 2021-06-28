@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: Django REST API
+  version: 1.0.0
+  description: API for Django REST app
+paths:
+  /health/:
+    get:
+      operationId: health_retrieve
+      description: ''
+      parameters:
+      - in: query
+        name: health
+        schema:
+          type: string
+      tags:
+      - health
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: Session

@@ -2,6 +2,7 @@
 .DS_Store
 *.pyc
 *.egg-info
+.coverage
 server/localdev-config.json
 credentials.json
 localdev-config.json

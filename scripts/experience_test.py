@@ -14,7 +14,7 @@ driver.get(os.environ["APP_URL"])  # Open a browser to the app's landing page
 time.sleep(3)
 
 # Verify the expected content is present
-title_text = driver.find_elements_by_xpath('//h1[@class="title"]')[0].text
+title_text = driver.find_elements_by_xpath('//h1')[0].text
 if len(title_text) == 0:
     sys.exit("Experience Test Failed: no title texts found")
 else:
@@ -24,12 +24,12 @@ else:
     else:
         sys.exit("Experience Test Failed: unexpected subtitle text {}".format(title_text))
 
-subtitle_text = driver.find_elements_by_xpath('//h2[@class="subtitle"]')[0].text
+subtitle_text = driver.find_elements_by_xpath('//h2')[0].text
 if len(subtitle_text) == 0:
     sys.exit("Experience Test Failed: no subtitle texts found")
 else:
     print("The subtitle text is: {}".format(subtitle_text))
-    if subtitle_text == "You are currently running a Django server.":
+    if subtitle_text == "You are running a Django microservice built for the IBM Cloud.":
         print("Experience Test Successful")
     else:
         sys.exit("Experience Test Failed: unexpected subtitle text {}".format(subtitle_text))

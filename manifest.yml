@@ -5,6 +5,6 @@ applications:
   name: pythondjangoapp
   buildpack: python_buildpack
   command: gunicorn --env DJANGO_SETTINGS_MODULE=pythondjangoapp.settings.production pythondjangoapp.wsgi -b 0.0.0.0:$PORT
-  memory: 512M
+  memory: 1G
   domain: not-used.net
   host: not-used

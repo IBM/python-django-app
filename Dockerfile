@@ -7,7 +7,7 @@ COPY Pipfile* /opt/app-root/src/
 ## NOTE - rhel enforces user container permissions stronger ##
 USER root
 
-RUN pip3 install --upgrade pip==21.0.1 \
+RUN pip3 install --upgrade pip==21.3.1 \
   && pip3 install --upgrade pipenv==2020.11.15 \
   && pipenv install --deploy
 

@@ -11,7 +11,7 @@ livereload = "*"
 
 [packages]
 gunicorn = "==20.1.0"
-whitenoise = "==5.3.0"
+whitenoise = "==6.0.0"
 ibmcloudenv = "*"
 django = ">=3.1"
 drf-spectacular = "*"

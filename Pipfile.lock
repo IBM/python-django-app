@@ -56,11 +56,11 @@
         },
         "drf-spectacular": {
             "hashes": [
-                "sha256:1d6bf33f57ec7d973a7a29a4976fab602333e0bcd0ab16fd3b4cd1e7b427613d",
-                "sha256:229c3dcc5f88275e4742078d4003638970db5382caa16d53c0b3b42b62b1c034"
+                "sha256:17ac5e31e5d6150dd5fa10843b429202f4f38069202acc44394cc5a771de63d9",
+                "sha256:866e16ddaae167a1234c76cd8c351161373551db994ce9665b347b32d5daf38b"
             ],
             "index": "pypi",
-            "version": "==0.22.0"
+            "version": "==0.22.1"
         },
         "gunicorn": {
             "hashes": [

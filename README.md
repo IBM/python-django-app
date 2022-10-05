@@ -35,7 +35,7 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 **Deprecated**: IBM® Cloud Foundry is deprecated. For more information, see [Deprecation of IBM Cloud Foundry](http://ibm.biz/ibmcf-announce).
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/python-django-app">
+    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=5ef1a664-8ff5-3ebb-b6d2-a8478e3cb789">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>

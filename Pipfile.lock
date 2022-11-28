@@ -190,11 +190,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:41fa68ecac9e099122990d7437bc10683b966c32a591caa2824dffcffd5dea7a",
-                "sha256:97a4a824325146ebc8dc29b0aa5f3b1eaa590a0f00cacbfdf81831670f07862d"
+                "sha256:57f6f22bde4e042978bcd50176fdb381d7c21a9efa4041202288d3737a0c6a54",
+                "sha256:a7620757bf984b58deaf32fc8a4577a9bbc0850cf92c20e1ce41c38c19e5fb75"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==65.6.2"
+            "version": "==65.6.3"
         },
         "six": {
             "hashes": [
@@ -383,10 +383,10 @@
         },
         "selenium": {
             "hashes": [
-                "sha256:3f1999875ef487ae676a254e7293a68041f1f1ec76be81402d8a1cd5a481bf3b"
+                "sha256:2384829279d41c7f5b338ce87453cc4e120099b6c093318207376c19f5d2c254"
             ],
             "index": "pypi",
-            "version": "==4.6.0"
+            "version": "==4.6.1"
         },
         "six": {
             "hashes": [

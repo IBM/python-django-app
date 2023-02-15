@@ -40,11 +40,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:59c39fc342b242fb42b6b040ad8b1b4c15df438706c1d970d416d63cdd73e7fd",
-                "sha256:644288341f06ebe4938eec6801b6bd59a6534a78e4aedde2a153075d11143894"
+                "sha256:08208dfe892eb64fff073ca743b3b952311104f939e7f6dae954fe72dcc533ba",
+                "sha256:4d492d9024c7b3dfababf49f94511ab6a58e2c9c3c7207786f1ba4eb77750706"
             ],
             "index": "pypi",
-            "version": "==3.2.17"
+            "version": "==3.2.18"
         },
         "djangorestframework": {
             "hashes": [
@@ -195,11 +195,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:a7687c12b444eaac951ea87a9627c4f904ac757e7abdc5aac32833234af90378",
-                "sha256:e261cdf010c11a41cb5cb5f1bf3338a7433832029f559a6a7614bd42a967c300"
+                "sha256:23c86b4e44432bfd8899384afc08872ec166a24f48a3f99f293b0a557e6a6b5d",
+                "sha256:daec07fd848d80676694d6bf69c009d28910aeece68a38dbe88b7e1bb6dba12e"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==67.1.0"
+            "version": "==67.3.1"
         },
         "six": {
             "hashes": [
